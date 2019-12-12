@@ -1,0 +1,20 @@
+{
+  "name": "express-monitoring",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:teamzerolabs/express-monitoring.git",
+  "author": "Jack Yeh <yayajacky@gmail.com>",
+  "license": "MIT",
+  "reference": "$MEDIUM_LINK",
+  "scripts": {
+    "dev": "node src/main_before_instrument.js",
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-list-endpoints": "^4.0.1",
+    "express-prom-bundle": "^5.1.5",
+    "prom-client": "^11.5.3",
+    "url-pattern": "^1.0.3"
+  }
+}
