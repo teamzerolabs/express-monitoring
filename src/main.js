@@ -1,14 +1,8 @@
-const makeApiMiddleware = require("./metric/setup");
+const makeApiMiddleware = require("api-express-exporter");
 const express = require("express");
 const app = express();
 
-app.use(
-  makeApiMiddleware({
-    port: 9991,
-    normalizePath: true,
-    discardUnmatched: false
-  })
-);
+app.use(makeApiMiddleware());
 
 app.use("/api/sub", require("./sub_module"));
 
