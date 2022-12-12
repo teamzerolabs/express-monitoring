@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "api-express-exporter": "^1.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "prom-client": "^11.5.3"
   }
 }
